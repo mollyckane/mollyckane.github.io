@@ -12,13 +12,13 @@
     }    
 }
 
-@media (max-width: 412px){
+@media (max-width: 966px){
     p, ul, h3 {
-        font-size: 1.5rem;
+        font-size: 1.5em;
     }
 
     h2 {
-        font-size: 2rem;
+        font-size: 2em;
     }
 
     h1 {
