@@ -1,4 +1,4 @@
-@media (min-width: 1090px) {
+@media (min-width: 1048px) {
     .wrapper {
     display: flex;
     flex-direction: column;
@@ -12,13 +12,13 @@
     }    
 }
 
-@media (max-width: 1377px){
+@media (max-width: 966px){
     p, ul, h3 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     h2 {
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     h1 {
