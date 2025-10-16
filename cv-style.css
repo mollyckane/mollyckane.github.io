@@ -23,15 +23,15 @@
 
 @media only screen and (max-device-width: 400px){
     p, ul, h3 {
-        font-size: 1.5rem;
+        font-size: 1rem;
     }
 
     h2 {
-        font-size: 2em;
+        font-size: 1rem;
     }
 
     h1 {
-        font-size: 105px;
+        font-size: 12rem;
     }
 }
 
@@ -48,7 +48,6 @@ body {
 }
 
 h1 {
-    font-size: 5rem;
     color: #e41181;
     margin: 0;
     align-self: flex-end;
