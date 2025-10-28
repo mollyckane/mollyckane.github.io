@@ -1,42 +1,329 @@
+<!-- 
+    index.html
+    M Kane 
+    27-Oct-2025
+-->
+
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta name="viewport' content="width=device-width initial-scale=1.0">
-    <title>Lab 3 CV</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap 1</title>
+    <!-- internal css -->
     <link rel="stylesheet" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Koulen|Lexend' rel='stylesheet'>
+    <!-- google icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" /> 
+    <!-- bootstrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 <body>
-    <div class="wrapper">
-        <header class="profile section">
-                <h1>Molly Kane</h1>
-                <h3>mollyckanework@gmail.com <br>+353 12345678</h3>
-                <p class="link"><a href="https://www.instagram.com/mollykane.art/">Instagram</a></p>
-        </header>
-        <main class="info section">
-            <h2>Personal Statement</h2>
-            <p>Kane is an ambitious individual with an eagerness to learn. She works independently while also being able to work effectively in a team. With multiple years of working in a customer facing environment, Kane has learned to exhibit the skills necessary when it comes to communicating with others and listening effectively.<br><br>
-            Currently, Kane is undertaking a Higher Diploma in Software Development, with a goal of finding employment in a related field.
-            </p>
-            <h2>Skills</h2>
-                <ul>
-                    <li>Communication</li>
-                    <li>Teamwork</li>
-                    <li>Time Management</li>
-                    <li>Hardworking</li>
-                </ul>
-            <h2>Qualifications</h2>
-                <ul>
-                    <li>Bachelor of Arts in Fine Art (Painting)</li>
-                    <li>Higher Diploma in Science Computing (Software Development)</li>
-                </ul>
-            <h2>Experience</h2>
-                <div class="experience-grid">
-                    <p class="bold">Aug 2022 - May 2025
-                    </p>
-                    <p class="align-right">Sports Direct <br><span class="italic">Limerick</span></p>
-                    <p class="item3">Served customers on tills. Aided in transactions. Stocked shop floor. Processed delivery.</p>
+    <div class="container-fluid rounded-3 mt-3 bg-white shadow-lg mb-3 mx-auto text-start">
+        <!-- header section -->
+        <header class= "header rounded-top-3 pt-md-0 pt-4">
+            <!-- row header all -->
+            <div class="row">
+                <!-- profile image column -->
+                <div class="col-block col-md-auto pfp-holder text-center text-md-start">
+                    <img class="picture " src="profile square.jpg" alt="profile picture of young woman">
                 </div>
-        </main> 
-    </div>  
+                <!-- primary & secondary info column -->
+                <div class="col">
+                    <!-- row header info-->
+                    <div class="row p-4  justify-content-lg-between">
+                        <!-- primary info col -->
+                        <div class="primary-info col-auto">
+                            <h1 class="name mt-0 mb-1 text-white text-uppercase">Molly Kane</h1>
+                            <div class="title mb-3">Software Developer</div>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <span class="me-2 material-symbols-rounded">mail</span>
+                                    mollyckanework@gmail.com
+                                </li>
+                                <li class="mb-2">
+                                    <span class="me-2 material-symbols-rounded">call</span>
+                                    087 2899571
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- prinmary info col END -->
+                        <!-- secondary info -->
+                        <div class="secondary-info col-auto mt-2">
+                            <ul class="socials list-unstyled">
+                                <li class="mb-3"><span class="text-center me-2">L</span>linkedin.com/mollyckane</li>
+                                <li class="mb-3"><span class="text-center me-2">L</span>github.com/mollyckane</li>
+                                <li class="mb-3"><span class="text-center me-2">L</span>instagram.com/mollykane.art</li>
+                            </ul>
+                        </div>
+                        <!-- secondary info col END -->
+                    </div>
+                    <!-- row header info END -->
+                </div>
+                <!-- primary & secondary info col END -->
+            </div>
+            <!-- row header all END -->
+        </header>
+        <!-- main section start -->
+        <div class="main-body p-5">
+            <!-- personal statement start -->
+            <section class="main-section personal-statement mb-5">
+                <h2 class="main-section-title text-uppercase fw-bold pb-3 mb-3 border-bottom">
+                    Personal Statement 
+                </h2>
+                <!-- <span class="border-top border-dark"></span> not working -->
+                <div class="main-section-content">
+                    <p class="mb-0">Kane is an ambitious individual with an eagerness to learn. She works independently while also being able to work effectively in a team. With multiple years of working in a customer facing environment, Kane has learned to exhibit the skills necessary when it comes to communicating with others and listening effectively. Currently, Kane is undertaking a Higher Diploma in Software Development, with a goal of finding employment in a related field. </p>
+                </div>
+            </section>
+            <!-- personal statement END -->
+             <!-- Experience row start  -->
+            <div class="row">
+                <!-- col start -->
+                <div class="col-lg-9">
+                    <!-- experience main section start -->
+                    <section class="main-section experience-section mb-5">
+                        <!-- experience title -->
+                        <h2 class="main-section-title text-uppercase fw-bold pb-3 mb-3 border-bottom">
+                        Experience
+                        </h2>
+                        <!-- exp main content -->
+                        <div class="main-section-content">
+                            <!-- sidebar timeline -->
+                            <div class="experience-timeline position-relative">
+                                <!-- timeline item 1 -->
+                                <div class="experience-timeline-item position-relative pb-5">
+                                    <!-- timeline exp header -->
+                                    <div class="experience-timeline-header mb-2">
+                                        <!-- work exp 1 -->
+                                        <div class="d-flex flex-column flex-md-row">
+                                            <!-- job title -->
+                                            <h3 class="experience-title fw-bold mb-1">Web Design Project</h3>
+                                            <!-- company name -->
+                                            <div class="company-name ms-auto text-muted">NCI</div>
+                                        </div>
+                                        <!-- work exp 1 end -->
+                                        <div class="experience-timeframe text-body-tertiary">Oct 2025 - Present</div>
+                                    <!-- timeline exp header END -->
+                                    </div>
+                                    <div class="experience-timeline-item-desc">
+                                        <p>During my first semester of 'Web Design & Client-side Scripting' module during my degree at NCI, I took part in a project with two of my classmates. We designed a responsive website for a dog grooming business. The website consisted of five separate pages, each with their own unique styles and features. We collaborated well as a team, with a strong plan that we successfuly kept on track with. Collaboration can be difficult but the way we overcame differences was by clear communication and trusting the process.</p>
+                                        <h4 class="experience-timeline-item-desc-heading fw-bold">Achievements</h4>
+                                        <ul>
+                                            <li>Implemented Bootstrap and jQuery</li>
+                                            <li>Cohesive style throughout</li>
+                                            <li>Finished project before deadline</li>
+                                        </ul>
+                                        <h4 class="experience-timeline-item-desc-heading fw-bold">Technologies used:</h4>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <span class="badge badge-bg badge-pill">HTML</span>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <span class="badge badge-bg badge-pill">CSS</span>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <span class="badge badge-bg badge-pill">Bootstrap</span>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <span class="badge badge-bg badge-pill">JavaScript</span>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <span class="badge badge-bg badge-pill">jQuery</span>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <span class="badge badge-bg badge-pill">Github</span>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <span class="badge badge-bg badge-pill">Deployment</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                <!-- timeline item 1 END -->
+                                </div>
+                                <!-- timeline item 2 start -->
+                                <div class="experience-timeline-item position-relative pb-5">
+                                    <!-- timeline exp header -->
+                                    <div class="experience-timeline-header mb-2">
+                                        <!-- work exp 1 -->
+                                        <div class="d-flex flex-column flex-md-row">
+                                            <!-- job title -->
+                                            <h3 class="experience-title fw-bold mb-1">Sales Assistant</h3>
+                                            <!-- company name -->
+                                            <div class="company-name ms-auto text-muted">Sports Direct</div>
+                                        </div>
+                                        <!-- work exp 1 end -->
+                                        <div class="experience-timeframe text-body-tertiary">Aug 2022 - May 2025</div>
+                                    <!-- timeline exp header END -->
+                                    </div>
+                                    <div class="experience-timeline-item-desc">
+                                        <p>For several years, I worked in a busy environment as a sales assistant. This job built up my confidence and interpersonal skills, as well as taught me effective and professional communication skills. It was in this job that I strived with detail-oriented tasks, such as, stock-taking and understanding all features of the POS systems. I was also excellent at upselling items and frequently generated extra profits for the store by promoting own-brand items.</p>
+                                        <h4 class="experience-timeline-item-desc-heading fw-bold">Achievements</h4>
+                                        <ul>
+                                            <li>Manual handling training</li>
+                                            <li>Fire safety training</li>
+                                            <li>Leaderboard for upselling</li>
+                                        </ul>
+                                        <h4 class="experience-timeline-item-desc-heading fw-bold">Skills used:</h4>
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <span class="badge badge-bg badge-pill">Communication</span>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <span class="badge badge-bg badge-pill">Time management</span>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <span class="badge badge-bg badge-pill">Detail-oriented</span>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <span class="badge badge-bg badge-pill">Conflict resolution</span>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <span class="badge badge-bg badge-pill">Independence</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                <!-- timeline item 2 END -->
+                                </div>
+                             <!--sidebar timeline END  -->
+                            </div>
+                        <!-- exp main content END -->
+                        </div>
+                    <!-- experience section END -->
+                    </section>
+                <!-- col end -->
+                </div>
+                <!-- col right side start -->
+                 <div class="col-lg-3">
+                    <!-- skills main section start-->
+                     <section class="main-section skills-section mb-5">
+                        <!-- skills main section title -->
+                        <h2 class="main-section-title text-uppercase fw-bold pb-3 mb-3 border-bottom">Skills</h2>
+                        <!-- skills main section content -->
+                        <div class="main-section-content">
+                            <!-- skill item -->
+                            <div class="skill-item">
+                                <h4 class="skills-category fw-bold">Frontend</h4>
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2">
+                                        <span class="material-symbols-rounded me-2 text-success">thumbs_up_double</span>
+                                        <span class="skill-name">HTML/CSS</span>
+                                        
+                                    </li>
+                                    <li class="mb-2">
+                                        <span class="material-symbols-rounded me-2 text-success skill-icon">thumb_up</span>
+                                        <span class="skill-name">JavaScript</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- skill item -->
+                            <div class="skill-item">
+                                <h4 class="skills-category fw-bold">Backend</h4>
+                                <ul class="list-unstyled mb-4">
+                                    <li class="mb-2">
+                                        <span class="material-symbols-rounded me-2 text-success skill-icon">thumb_up</span>
+                                        <span class="skill-name">Java</span>  
+                                    </li>
+                                    <li class="mb-2">
+                                        <span class="material-symbols-rounded me-2 text-warning skill-icon">thumb_up</span>
+                                        <span class="skill-name">Python</span>
+                                    </li>
+                                    <li class="mb-2">
+                                        <span class="material-symbols-rounded me-2 text-warning skill-icon">thumb_up</span>
+                                        <span class="skill-name">MySQL</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- skill item -->
+                            <div class="skill-item">
+                                <h4 class="skills-category fw-bold">Others</h4>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <span class="badge badge-light">UML</span>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <span class="badge badge-light">Git</span>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <span class="badge badge-light">Excel</span>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <span class="badge badge-light">Bootstrap</span>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <span class="badge badge-light">jQuery</span>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <span class="badge badge-light">OOP</span>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <span class="badge badge-light">Graphic Design</span>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <span class="badge badge-light">Visual Paradigm</span>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <span class="badge badge-light">Digital Art</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        <!-- skills main content section END -->
+                        </div>
+                    <!-- skills main section END  -->
+                    </section>
+                    <!-- education main section start -->
+                    <section class="main-section education-section mb-5">
+                        <!-- education main title -->
+                        <h2 class="main-section-title text-uppercase fw-bold pb-3 mb-3 border-bottom">Education</h2>
+                        <!-- education main content -->
+                        <div class="main-section-content">
+                            <ul class="list-unstyled">
+                                <li class="mb-3">
+                                    <span class="degree fw-semibold">H.Dip in Science in Computing</span>
+                                    <span class="degree-uni"><br>National College of Ireland</span>
+                                    <span class="degree-years text-body-tertiary"><br>Aug 2025 - Present</span>
+                                </li>
+                                <li class="mb-3">
+                                    <span class="degree fw-semibold">BA in Fine Art &amp; Education</span>
+                                    <span class="degree-uni"><br>Technological University of the Shannon: Midwest</span>
+                                    <span class="degree-years text-body-tertiary"><br>Aug 2025 - Present</span>
+                                </li>
+                            </ul>
+                        <!-- education main content END  -->
+                        </div>
+                    <!-- education main section END -->
+                    </section>
+                    <!-- languages main section start -->
+                    <section class="main-section lang-section mb-5">
+                        <h2 class="main-section-title text-uppercase fw-bold pb-3 mb-3 border-bottom">Languages     
+                        </h2>
+                        <div class="main-section-content">
+                            <ul class="list-unstyled lang-list">
+                                <li class="mb-2">
+                                    <span class="lang-list-name">English</span>
+                                    <small class="text-body-tertiary">(Native)</small>
+                                </li>
+                                <li class="mb-2">
+                                    <span class="lang-list-name">Irish</span>
+                                    <small class="text-body-tertiary">(Professional)</small>
+                                </li>
+                                <li class="mb-2">
+                                    <span class="lang-list-name">French</span>
+                                    <small class="text-body-tertiary">(Intermediate)</small>
+                                </li>
+                            </ul>
+                        </div>
+                    <!-- languages main section end -->
+                    </section>
+                <!-- col right side END -->
+                </div>
+            <!-- experience row END -->
+            </div>
+        <!-- main section END -->
+        </div>
+    <!-- container end -->
+    </div>
+    
+<!-- bootstrap js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 </html>

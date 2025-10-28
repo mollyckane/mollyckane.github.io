@@ -1,130 +1,160 @@
-@media only screen and (min-width: 1048px) {
-    .wrapper {
-    display: flex;
-    flex-direction: column;
-    margin: 20px;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: justify;
-    width: 40%;
-    box-shadow: 1px 1px 10px #26262750;
-    }    
-    p, ul, h3 {
-    font-size: 0.8rem;
+/* google icons */
+.material-symbols-rounded {
+    vertical-align: middle;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 24
+}
+
+/* scale for small screens */
+@media (max-width: 760px){
+    .pt-md-0 {
+        padding-top: 0 !important;
     }
-    h2 {
-        font-size: 1em;
+    .text-md-start {
+        text-align: left !important;
     }
-    h1 {
-        font-size: 5rem;
+    /* ensures header scales with other elements */
+    .header{
+        height: auto !important;
+    }
+    /* scales down pfp and adds rounded corners */
+    .header .picture {
+        width: 120px !important;
+        border-radius: 4px;
+    }
+    .container-fluid {
+        padding-top: 0;
+    }
+    /* centers text in header */
+    .primary-info, .secondary-info{
+        margin: auto;
+        text-align: center;
+    }
+    .justify-content-md-between {
+        justify-content: space-between !important;
     }
 }
 
-@media only screen and (max-device-width: 400px){
-    p, ul, h3 {
-        font-size: 1rem;
-    }
-
-    h2 {
-        font-size: 1rem;
-    }
-
-    h1 {
-        font-size: 12rem;
-    }
+/* main container */
+.container-fluid{
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
+    max-width: 1000px;
 }
 
-body {
-    display: flex;
-    margin: auto 0;
-    background-color: #fcfcfa;
-    color: #262627;
-    font-family: 'Lexend', Times, serif;
-    font-size: 0.8rem;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+/* header section */
+.header {
+    background-color: rgb(152, 78, 63);
+    height: 220px;
+    color: white;
 }
 
-h1 {
-    color: #e41181;
-    margin: 0;
-    align-self: flex-end;
-    /*height: 110px;*/
+/* profile picture in header */
+.header .picture {
+    width: 220px;
+    border-radius: 7px 0 0 0;
 }
 
-h2 {
-    margin: 0;
-    border-bottom: 1px solid #19164892;
-    color: #191648;
-}
-
-h1, h2{
-    font-family: 'Koulen', Times, serif;
+/* name in header */
+.header .name {
+    font-size: 2.5rem;
+    font-weight: 700;
     letter-spacing: 0.15rem;
 }
-
-.link {
-    margin-top: 0;
+ 
+/* title in header */
+.header .title {
+    font-size: 1.5rem;
 }
 
-.profile {
-    margin: 15px;
-    color: #191648;
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
-    text-align: right;
+/* images */
+img {
+    vertical-align: middle;
 }
 
-.section {
-    /*background-color: aqua;*/
-    padding: 1%;
+/* all titles in main section */
+.main-section-title{
+    font-size: 1.25rem;
+    position: relative;
 }
 
-.info {
-    display: flex;
-    flex-direction: column;
-    padding: 1%;
-    gap: 5px;
-    margin: 20px;
+/* side timeline bar beside work experience */
+.experience-timeline::before{
+    content: "";
+    display: inline-block;
+    width: 3px;
+    height: 95%;
+    background: #c3aab8;
+    left: 6px;
+    top: 5px;
+    position: absolute;
 }
 
-ul {
-    list-style-type: circle;
+/* rounded square point in timeline bar */
+.experience-timeline-item::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: -32px;
+  top: 4px;
+  width: 15px;
+  height: 15px;
+  border: 4px solid #a34c72;
+  background: white;
+  border-radius: 30%;
 }
 
-a {
-    color: #191648;
+/* timeline bar alignment */
+.experience-timeline{
+    padding-left: 2rem;
 }
 
-.experience-grid {
-    display: grid;
-    grid-template-columns: 2fr 0.5fr;
+/* titles in experience section */
+.experience-title {
+    font-size: 1.125rem;
 }
 
-.experience-grid > p {
-    margin-bottom: 0;
+/* smaller and lighter font */
+.company-name, .experience-timeframe, .degree-years{
+    font-size: 0.8rem;
+    font-weight: 500;
 }
 
-.align-right {
-    text-align: right;
+/* subheading for each work exp section + skills category*/
+.experience-timeline-item-desc-heading, .skills-category{
+    font-size: 1rem;
 }
 
-.bold {
-    font-weight: 600;
+/* paragraphs in work exp section */
+.experience-timeline-item-desc{
+    font-size: 0.9rem;
 }
 
-.italic {
-    font-style: italic;
+/* smaller font for skill names */
+.skill-name{
+    font-size: 0.8rem;
 }
 
-span.italic {
-    color: #19164892;
+/* larger font for icons */
+.skill-icon{
+    font-size: 1.2rem !important;
 }
 
-.item3 {
-    grid-column-start: 1;
-    grid-column-end: 3;
+/* technologies/skills used badge bg colour */
+.badge-bg{
+    background-color: rgb(152, 78, 63);
+}
+
+/* other skills badge */
+.badge-light {
+    color: #58677c !important;
+    background-color: rgb(243, 190, 180);
+}
+
+/* smaller font for education university */
+.degree-uni {
+    font-size: 0.85rem;
 }
