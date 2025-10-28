@@ -1,3 +1,8 @@
+:root {
+    --primary-colour: rgb(152, 78, 63);
+    --secondary-colour: rgb(243, 190, 180);
+}
+
 /* google icons */
 .material-symbols-rounded {
     vertical-align: middle;
@@ -47,7 +52,7 @@
 
 /* header section */
 .header {
-    background-color: rgb(152, 78, 63);
+    background-color: var(--primary-colour);
     height: 220px;
     color: white;
 }
@@ -87,7 +92,7 @@ img {
     display: inline-block;
     width: 3px;
     height: 95%;
-    background: #c3aab8;
+    background: var(--secondary-colour);
     left: 6px;
     top: 5px;
     position: absolute;
@@ -102,7 +107,7 @@ img {
   top: 4px;
   width: 15px;
   height: 15px;
-  border: 4px solid #a34c72;
+  border: 4px solid var(--primary-colour);
   background: white;
   border-radius: 30%;
 }
@@ -145,16 +150,18 @@ img {
 
 /* technologies/skills used badge bg colour */
 .badge-bg{
-    background-color: rgb(152, 78, 63);
+    background-color: var(--primary-colour);
 }
 
 /* other skills badge */
 .badge-light {
     color: #58677c !important;
-    background-color: rgb(243, 190, 180);
+    background-color: var(--secondary-colour);
 }
 
 /* smaller font for education university */
 .degree-uni {
     font-size: 0.85rem;
 }
+
+
