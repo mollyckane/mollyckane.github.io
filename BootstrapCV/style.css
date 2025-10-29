@@ -14,7 +14,7 @@
 }
 
 /* scale for small screens */
-@media (max-width: 760px){
+@media (max-width: 800px){
     .pt-md-0 {
         padding-top: 0 !important;
     }
@@ -27,7 +27,7 @@
     }
     /* scales down pfp and adds rounded corners */
     .header .picture {
-        width: 120px !important;
+        width: 150px !important;
         border-radius: 4px;
     }
     .container-fluid {
@@ -165,4 +165,7 @@ img {
     font-size: 0.85rem;
 }
 
+.loading-anim {
+    opacity: 0;
+}
 
