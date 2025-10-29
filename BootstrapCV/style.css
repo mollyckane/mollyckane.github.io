@@ -55,13 +55,14 @@
     background-color: var(--primary-colour);
     height: 220px;
     color: white;
+    overflow: hidden;
 }
 
 /* profile picture in header */
 .header .picture {
     width: 220px;
-    border-radius: 7px 0 0 0;
 }
+
 
 /* name in header */
 .header .name {
