@@ -21,6 +21,7 @@ form.addEventListener('submit', handleForm);
 
 // show message and hide form
 function showMessage(){
+    event.preventDefault();
     // get input from user
     var usersName=document.getElementById("f1-name-input").value;
     var usersEmail=document.getElementById("f1-email-input").value;

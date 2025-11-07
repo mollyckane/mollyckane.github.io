@@ -12,33 +12,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lab Week 7</title>
     <!-- link css -->
-    <link rel="stylesheet" href="form.css"/>
+    <link rel="stylesheet" href="../../css/general.css"/>
     <!-- tab icon -->
     <link rel="icon" href="../../MK.svg">
 </head>
 
 <body>
-
-    <div id="message-display">
-
+    
+    <div class="wrap-content">
+        <div id="message-display">
+        
+        </div>
+        <!-- form start MESSAGE -->
+        <form id="form1" onsubmit="showMessage()" class="loading-anim">
+            <span>Name:</span><input type="text" id="f1-name-input" placeholder="Enter name" required /><br>
+            <span>Email:</span><input type="email" id="f1-email-input" placeholder="your@email.com" required /><br>
+            <input type="submit" class="input-btn"><br>
+            <span>show message version</span>
+        </form>
+        <!-- form end -->
+        
+        <!-- form start ALERT -->
+        <form id="form2" onsubmit="formChecker()" class="loading-anim">
+            <span>Name:</span><input type="text" id="f2-name-input" placeholder="Enter name" required /><br>
+            <span>Email:</span><input type="email" id="f2-email-input" placeholder="your@email.com" required /><br>
+            <input type="submit" class="input-btn"><br>
+            <span>show alert version</span>
+        </form>
+        <!-- form end -->
     </div>
-    <!-- form start MESSAGE -->
-    <form id="form1" onsubmit="showMessage()" class="loading-anim">
-        <span>Name:</span><input type="text" id="f1-name-input" placeholder="Enter name" required/><br>
-        <span>Email:</span><input type="email" id="f1-email-input" placeholder="your@email.com" required/><br>
-        <input type="submit" class="input-btn"><br>
-        <span>show message version</span>
-    </form>
-    <!-- form end -->
-
-    <!-- form start ALERT -->
-    <form id="form2" onsubmit="formChecker()" class="loading-anim">
-        <span>Name:</span><input type="text" id="f2-name-input" placeholder="Enter name" required/><br>
-        <span>Email:</span><input type="email" id="f2-email-input" placeholder="your@email.com" required/><br>
-        <input type="submit" class="input-btn"><br>
-        <span>show alert version</span>
-    </form>
-    <!-- form end -->
+   
     
 <!-- script link -->
 <script src="form.js"></script>

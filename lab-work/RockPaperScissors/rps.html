@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="../../css/general.css" />
+    <!-- tab icon -->
+    <link rel="icon" href="../../MK.svg">
+    <!-- bootstrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+</head>
+<body class="gradient-bg">
+    <!-- form start MESSAGE -->
+    <div class="loading-anim white-container">  
+        <span class="text-center mb-3">Let's Play Rock, Paper, Scissors!</span>
+        <div class="options-container mb-3 pb-2">
+            <div class="input-container">
+                <span class="input fw-normal">Rock</span>
+                <button class="icon-btn" id="rock-choice" name="choice"><i class="fa-solid fa-hand-back-fist rotate"></i></button>
+            </div>
+            <div class="input-container">
+                <span class="input fw-normal">Paper</span>
+                <button class="icon-btn" id="paper-choice" name="choice"><i class="fa-solid fa-hand rotate"></i></button>
+            </div>
+            <div class="input-container">
+                <span class="input fw-normal">Scissors</span>
+                <button  class="icon-btn" id="scissors-choice" name="choice"><i class="fa-solid fa-hand-scissors flip"></i></button>
+            </div>
+        </div>
+            
+        <span class="text-center">You: <span id="user-choice"> </span></span><br><span class="text-center">Computer: <span id ="comp-choice"> </span></span>
+        <span class="text-center result-text">Results: <span id="result"> </span></span>
+        <!-- hide button until result happens -->
+        <button class="input-btn">Try again!</button>
+    </div>
+        
+        
+        
+    </div>
+    <!-- form end -->
+
+
+    <!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/21102ac5ea.js" crossorigin="anonymous"></script>
+    <!-- js link -->
+    <script src="rps.js"></script>
+</body>
+</html>
