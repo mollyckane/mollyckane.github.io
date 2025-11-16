@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Week 9 -  Grades</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="../../css/general.css" />
+    <!-- tab icon -->
+    <link rel="icon" href="../../MK.svg">
+    <!-- bootstrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body class="gradient-orange-light">
+    <!-- white container -->
+    <div class="loading-anim white-container">
+        <!-- form start -->
+        <span class="text-center mb-1 brown-font">Grades Average Calculator</span>
+        <p class="m-2 brown-font text-center">The calculator will output your average and grade based on the results you input.</p>
+        <div class="options-container brown-border-btm mb-3 pb-2">
+            <div class="input-container-flex-col">
+                <span class="input fw-normal brown-font">Number of Subjects:</span>
+                <input id="num_subjects" class="input-brown text-start">
+                <div class="d-flex"><button onclick="getResults()" class="brown-btn" id="submit">Submit</button></div>
+            </div> 
+            <!-- hidden until submission -->
+            <div class="hidden">
+                <div class="input-container-flex-col fw-normal brown-font" id="subject-results-container">
+                    <span class="brown-font">Your results:</span>
+                <!-- input results show here -->   
+                </div>
+                <div class="input-container-flex-col fw-normal brown-font" id="grade-avg-container">
+                <span class="brown-font">Your average:</span>
+                <!-- average results show here -->
+                </div>
+                <div class="input-container-flex-col fw-normal brown-font" id="grade-container">
+                    <span class="brown-font">Overall grade:</span>
+                    <!-- overall grade a-f show here -->
+                    </div>
+            </div>
+    </div>
+
+<!-- bootstrap js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<!-- font awesome -->
+<script src="https://kit.fontawesome.com/21102ac5ea.js" crossorigin="anonymous"></script>
+<!-- js link -->
+<script src="grades.js"></script>
+</body>
+</html>
