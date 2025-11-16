@@ -20,7 +20,7 @@
 body {
     background-color: rgb(229, 238, 175) !important;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     font-family: 'Arial', sans-serif;
     justify-content: center;
     align-items: center;
@@ -134,6 +134,15 @@ span, h5 {
     background: linear-gradient(143deg, rgb(225, 140, 90) 0%, rgb(226, 174, 146) 58%, rgb(238, 207, 188) 98%);
 }
 
+.gradient-pink-light {
+    background: linear-gradient(143deg, rgb(231, 125, 180) 0%, rgb(235, 152, 153) 58%, rgb(238, 207, 188) 98%);
+    height: 100vh;
+}
+
+.bg-pink{
+    background: pink !important;
+}
+
 .white-container{
     background-color: rgb(245, 245, 245);
     padding: 2rem;
@@ -147,6 +156,10 @@ span, h5 {
     border-radius: .5rem;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.183);
     transition: 0.3s;
+}
+
+.white-container>.w-100{
+    width: 100%;
 }
 
 .options-container {
@@ -216,4 +229,16 @@ span, h5 {
 
 .brown-btn:hover{
     transform: scale(1.2, 1.2);
+}
+
+#lyrics-container{
+    font-size: 0.8rem;
+}
+
+.flex-col-h-auto{
+    margin: 0 auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100vw;
 }

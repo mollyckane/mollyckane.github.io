@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Week 9 - 99 bottles</title>
+    <!-- link css -->
+    <link rel="stylesheet" href="../../css/general.css" />
+    <!-- tab icon -->
+    <link rel="icon" href="../../MK.svg">
+    <!-- bootstrap css  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body class="bg-pink flex-col-h-auto">
+        <!-- white container -->
+        <div class="loading-anim white-container justify-content-center">
+            <!-- form start -->
+            <span class="text-center mb-3 brown-font">Press button to generate song lyrics!</span>
+            <!-- button -->
+            <div class="d-flex"><button onclick="generateLyrics()" class="brown-btn align-content-center"
+                    id="submit">Generate</button></div>
+        </div>
+        <!-- hidden until submission -->
+        <div class="hidden">
+            <div class="input-container-flex-col fw-normal brown-font white-container w-100 m-0">
+                <span class="brown-font">99 bottles of beer</span>
+                <p id="lyrics-container" class=" ">
+        
+                </p>
+                <!-- input results show here -->
+            </div>
+        </div>
+    
+
+        <!-- bootstrap js -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+        <!-- font awesome -->
+        <script src="https://kit.fontawesome.com/21102ac5ea.js" crossorigin="anonymous"></script>
+        <!-- js link -->
+        <script src="bottles.js"></script>
+</body>
+
+</html>
