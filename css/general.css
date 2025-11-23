@@ -116,9 +116,9 @@ span, h5 {
 }
 
 ul {
-    list-style-type: none;
     margin: 0 !important;
     padding:0 !important;
+    list-style-position: inside;
 }
 .wrap-content{
     display: flex;
