@@ -1,0 +1,110 @@
+// Select elements
+const input = document.getElementById('gc-input');
+const addBtn = document.getElementById('add-item-btn');
+const list = document.getElementById('gc-list-output');
+const appContainer = document.getElementById('gc-form');
+
+const groceryItems = [];
+let printBtn = null;
+let redoBtn = null;
+
+// Add item function
+addBtn.addEventListener('click', function (event) {
+    event.preventDefault();
+    const value = input.value.trim();
+    if (value !== "") {
+        addItem(value);
+        groceryItems.push(value);
+
+        if (!printBtn) {
+            printBtn = document.createElement('button');
+            printBtn.textContent = 'Print My List';
+            printBtn.className = 'gc-btn-print gc-btn';
+            printBtn.onclick = printUnorderedList;
+            appContainer.appendChild(printBtn); 
+        }
+        input.value = "";
+    }
+});
+
+function addItem(text) {
+    event.preventDefault();
+    // Create item div
+    const itemDiv = document.createElement('div');
+    itemDiv.className = 'output-items-container';
+
+    // Item text
+    const itemText = document.createElement('span');
+    itemText.className = 'gc-input';
+    itemText.textContent = text;
+
+    // X button
+    const removeBtn = document.createElement('button');
+    removeBtn.textContent = 'X';
+    removeBtn.className = 'gc-btn-x gc-btn';
+    removeBtn.onclick = function () {
+        list.removeChild(itemDiv);
+
+        // Remove from array
+        const idx = groceryItems.indexOf(text);
+        if (idx !== -1) groceryItems.splice(idx, 1);
+
+        // when no items left, remove print button
+        if (groceryItems.length === 0 && printBtn) {
+            appContainer.removeChild(printBtn);
+            printBtn = null;
+        }
+    };
+
+    itemDiv.appendChild(itemText);
+    itemDiv.appendChild(removeBtn);
+    list.appendChild(itemDiv);
+}
+
+function printUnorderedList() {
+    event.preventDefault();
+    const oldUl = document.querySelector('.gc-unordered-list');
+    if (oldUl) oldUl.remove();
+
+    const ul = document.createElement('ul');
+    ul.className = 'gc-unordered-list';
+
+    groceryItems.forEach(function (item) {
+        const li = document.createElement('li');
+        li.textContent = item;
+        ul.appendChild(li);
+    });
+
+    appContainer.appendChild(ul);
+   
+    if (!redoBtn) {
+        redoBtn = document.createElement('button');
+        redoBtn.textContent = 'Redo';
+        redoBtn.className = 'gc-btn-redo gc-btn';
+        redoBtn.onclick = resetAll;
+        appContainer.appendChild(redoBtn);
+    }
+}
+
+function resetAll() {
+    // Remove all items from the output
+    while (list.firstChild) {
+        list.removeChild(list.firstChild);
+    }
+    // Clear the groceryItems array
+    groceryItems.length = 0;
+    // Remove unordered list
+    const oldUl = document.querySelector('.gc-unordered-list');
+    if (oldUl) oldUl.remove();
+    // Remove print button
+    if (printBtn) {
+        appContainer.removeChild(printBtn);
+        printBtn = null;
+    }
+    // Remove redo button
+    if (redoBtn) {
+        appContainer.removeChild(redoBtn);
+        redoBtn = null;
+    }
+}
+
