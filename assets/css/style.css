@@ -52,6 +52,7 @@
 body {
     background: var(--background);
     max-width: 1920px;
+    overflow-x: hidden;
     margin: 0;
     margin-left:auto;
     margin-right: auto;
@@ -375,8 +376,6 @@ nav span{
     
     body{
         min-height: 100vh;
-        max-width: 100%;
-        overflow-x: hidden;
     }
 }
 
