@@ -93,7 +93,7 @@ a:hover{
 
 .dream-gradient{
     background: var(--gradient);
-
+    background-repeat: no-repeat;
     background-attachment: inherit;
     background-size: cover;
     margin-bottom: 0;
@@ -376,7 +376,7 @@ nav span{
     
     body{
         min-height: 100vh;
-        min-width: 100vw !important;
+        max-width: 100% !important;
         overflow-x: hidden !important;
     }
 }
