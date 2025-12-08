@@ -318,11 +318,10 @@ nav span{
     gap: 1rem;
 }
 
-@media (max-width: 960px){
+@media (max-width: 760px){
     .header-flex{
         display: flex;
         padding: 0;
-
     }
 
     .header-item{
@@ -376,8 +375,8 @@ nav span{
     
     body{
         min-height: 100vh;
-        max-width: 100% !important;
-        overflow-x: hidden !important;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 }
 
