@@ -52,7 +52,6 @@
 body {
     background: var(--background);
     max-width: 1920px;
-    overflow-x: hidden;
     margin: 0;
     margin-left:auto;
     margin-right: auto;
@@ -319,7 +318,7 @@ nav span{
     gap: 1rem;
 }
 
-@media (max-width: 760px){
+@media (max-width: 960px){
     .header-flex{
         display: flex;
         padding: 0;
@@ -337,6 +336,10 @@ nav span{
         display: none;
     }
 
+    .navbar{
+        padding-right:0;
+        padding-left: 20px;
+    }
 
     .navbar, .header-left, .header-right{
         flex-wrap: wrap;
@@ -376,6 +379,13 @@ nav span{
     
     body{
         min-height: 100vh;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    pre{
+        margin-left: -20px;
+        position: absolute;
     }
 }
 
