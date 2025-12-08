@@ -35,10 +35,18 @@ function createGroceryList() {
     });
 
     //append child elements to parent
-    
     itemDiv.appendChild(listItem);
     itemDiv.appendChild(removeButton);
     uList.appendChild(itemDiv);
+
+    clearInput();
+}
+
+function clearInput(){
+    if (input != " "){
+        input.value=" ";
+    }
+
 }
 
 

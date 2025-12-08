@@ -1,0 +1,86 @@
+<!-- 
+    index.html
+    author: mollyckane
+    copyright 2025 
+    -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MK | Contact</title>
+    <!-- tab icon -->
+    <link rel="icon" href="../MK.svg">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <!-- google material icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Sharp:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- emailJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+                publicKey: ("s8Xbd79dpUAN-8s3e"),
+            });
+        })();
+    </script>
+
+
+</head>
+
+<body class="dream-gradient loading-anim">
+    <header class="header-flex">
+        <div class="header-left">
+            <h1 class="header-item">MK</h1>
+            <span class="header-item header-line"></span>
+            <h2 class="header-item">contact</h3>
+        </div>
+        <div class="header-right">
+            <button id="theme-toggle" class=""><i class="material-symbols-sharp">lightbulb_2</i></button>
+        </div>
+        <div class="header-right">
+            <nav class="navbar" id="navbar">
+                <a href="../index.html"><span class="nav-item">home</span></a>
+                <a href="cv.html"><span class="nav-item">cv</span></a>
+                <a href="../portfolio/index.html"><span class="nav-item">portfolio</span></a>
+                <a href="contact.html" class="active"><span class="nav-item">contact</span></a>
+            </nav>
+        </div>
+    </header>
+    <main class="main-section-flex">
+            <!-- medium card start -->
+            <div class="wide-card-container">
+                <div class="med-card-container-center">
+                    <div class="card med-card mc-long">
+                        <h2 style="text-align: center;">my details</h2>
+                        <p>email: <a href="mailto:mollyckanework@gmail.com">mollyckanework@gmail.com</a><br>
+                        linkedin: <a href="http://www.linkedin.com/in/mollyckane" target="_blank">linkedin.com/in/mollyckane </a><br>
+                        instagram: <a href="https://www.instagram.com/mollykane.art/" target="_blank">mollykane.art</a></p>
+                    </div>
+                    <div class="card med-card mc-long">
+                        <h2 style="text-align: center;">send a message!</h2>
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-row-flex">
+                                <label for="name">Your name:</label>
+                                <input type="text" id="name">
+                            </div>
+                            <div class="form-row-flex">
+                                <label for="email">Your email:</label>
+                                <input id="email" ="email" required>
+                            </div>
+                            <label for="message">Your message:</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </form>
+                        <button class="nav-item submit-btn" type="submit" onclick="sendMail()">submit</button>
+                    </div>
+                </div>
+            </div>
+            <!-- medium card end -->
+    </main>
+    <footer>
+        <p>mck &copy 2025</p>
+    </footer>
+    <script src="../assets/js/main.js"></script>
+</body>
