@@ -93,7 +93,7 @@ a:hover{
 
 .dream-gradient{
     background: var(--gradient);
-    background-repeat: no-repeat;
+
     background-attachment: inherit;
     background-size: cover;
     margin-bottom: 0;
