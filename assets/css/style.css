@@ -96,6 +96,7 @@ a:hover{
     background-repeat: no-repeat;
     background-attachment: inherit;
     background-size: cover;
+    margin-bottom: 0;
 }
 
 /* .dream-gradient {
@@ -503,6 +504,7 @@ footer > p{
 
 footer{
     margin-top: auto !important;
+    margin-bottom: 2rem;
 }
 
 .wide-container {
