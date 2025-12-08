@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
 
 :root{
+    --background: rgb(202, 221, 244);
     --primary-white: #2c2c49;
     --primary-shadow: 0px 0px 6px rgba(0, 0, 0, 0.235);
     --secondary-text: #a4b9e0;
@@ -31,6 +32,7 @@
 } */
 
 [data-theme='dark']{
+    --background: #1e1e2d;
     --primary-white: rgb(182, 182, 232);
     --primary-shadow: 0px 0px 6px rgba(0, 0, 0, 0.235);
     --secondary-text: #395790;
@@ -48,6 +50,7 @@
 }
 
 body {
+    background: var(--background);
     max-width: 1920px;
     margin: 0;
     margin-left:auto;
@@ -91,7 +94,7 @@ a:hover{
 .dream-gradient{
     background: var(--gradient);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: inherit;
     background-size: cover;
 }
 
@@ -318,7 +321,7 @@ nav span{
     .header-flex{
         display: flex;
         padding: 0;
-        margin: 0 auto;
+
     }
 
     .header-item{
@@ -368,6 +371,10 @@ nav span{
 
     .top-bar-headings{
         padding: 1rem;
+    }
+    
+    body{
+        min-height: 100vh;
     }
 }
 
