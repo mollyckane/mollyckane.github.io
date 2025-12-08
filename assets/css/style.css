@@ -245,6 +245,19 @@ nav span{
     justify-content: center;
     gap: 0.4rem;
 }
+.wide-card{
+    width: 95%;
+    margin: 0 auto;
+    min-height: 420px;
+}
+
+.wide-card h4{
+    padding: 2rem 2rem 0 2rem;
+}
+
+.wide-card p{
+    padding: 0 2rem;
+}
 
 .wide-card-grid{
     width: 95%;
@@ -279,7 +292,7 @@ nav span{
     /* filter: var(--img-hue); */
 }
 
-.wide-card-grid p {
+.wide-card-grid p{
     margin-top: auto;
     margin-bottom: 1rem;
 }
@@ -304,7 +317,16 @@ nav span{
 @media (max-width: 960px){
     .header-flex{
         display: flex;
-        flex-wrap: wrap ;
+        flex-wrap: wrap;
+    }
+
+    .header-line{
+        display: none;
+    }
+
+
+    .navbar, .header-left, .header-right{
+        flex-wrap: wrap;
     }
 
     .med-card-container, .med-card-container-center{
@@ -457,4 +479,25 @@ footer > p{
     text-align: center;
     font-size: 0.7rem;
     color: var(--accent-text);
+}
+
+footer{
+    margin-top: auto !important;
+}
+
+.wide-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.4rem;
+    width: 95%;
+    margin: 0 auto;
+    max-height: 250px;
+    height: 250px;
+}
+
+ul{
+    list-style: disc;
+    list-style-position: inside;
+    padding: 2rem;
 }
