@@ -317,7 +317,16 @@ nav span{
 @media (max-width: 960px){
     .header-flex{
         display: flex;
-        flex-wrap: wrap;
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .header-item{
+        padding: 1.3rem;
+    }
+
+    .header-left h2{
+        display: none;
     }
 
     .header-line{
@@ -356,6 +365,10 @@ nav span{
     .wide-card-grid p {
         margin-left: 1rem;
     } 
+
+    .top-bar-headings{
+        padding: 1rem;
+    }
 }
 
 .mc-center{
