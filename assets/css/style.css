@@ -252,15 +252,15 @@ nav span{
 .wide-card{
     width: 95%;
     margin: 0 auto;
-    min-height: 420px;
+    min-height: 400px;
 }
 
 .wide-card h4{
-    padding: 2rem 2rem 0 2rem;
+    padding:0 2rem;
 }
 
 .wide-card p{
-    padding: 0 2rem;
+    padding: 0 2rem 2rem 2rem;
 }
 
 .wide-card-grid{
@@ -387,6 +387,31 @@ nav span{
         margin-left: -20px;
         position: absolute;
     }
+
+    .form-row-flex{
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+
+    input, textarea{
+        width: 80% !important;
+    }
+
+    textarea{
+        margin-top: -20px !important;
+    }
+    
+    .mc-long{
+        height: 100% !important;
+    }
+
+    .submit-btn{
+        margin-bottom: 1rem;
+    }
+
+
+
+
 }
 
 .mc-center{
@@ -407,7 +432,7 @@ justify-content: center;
 }
 
 .mc-long{
-    height: 450px;
+   min-height: 450px;
 
 }
 
@@ -476,11 +501,12 @@ input{
 
 textarea{
     resize: vertical;
-    padding: 1rem;
+    padding: 0.2rem;
     width: auto;
     margin: 0 1rem 1rem 1rem;
     max-height: 100px;
 }
+
 
 /* .med-card .submit-btn{
     width: 100px;
